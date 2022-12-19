@@ -3,5 +3,3 @@
 
 My motto, as Giorgio Yakutamori said once, is:
 > Life is too short to be.
-
-###### *My skills if they where mesured in characters size*
