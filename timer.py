@@ -1,15 +1,5 @@
 import time
 import datetime
-# The following bytes object consists of 160 signed 8-bit samples,
-# which are base64 encoded, When played at 8000 Hz, it results in a
-# tone of 400 Hz. The duration of the sound is 0.02 Hz, so it should
-# be looped 50 times per second for longer sounds.
-base64_encoded_sound_data = b'''
-gKfK5vj/+ObKp39YNRkHAQcZNViAp8rm+P/45sqngFg1GQcBBxk1WI
-Cnyub4//jmyqeAWDUZBwEHGTVYf6fK5vj/+ObKp39YNRkHAQcZNViA
-p8rm+P/45sqngFg1GQcBBxk1WH+nyub4//jmyqd/WDUZBwEHGTVYf6
-fK5vj/+ObKp39YNRkHAQcZNViAp8rm+P/45sqnf1g1GQcBBxk1WA==
-'''
 
 art = """\
     (  )   (   )  )
@@ -52,5 +42,5 @@ while tea != 1 or 2 or 3:
 		tea_time = m * 60 + s
 		countdown()
 		break
-	else:
+	else:python3 make simple beep sound linux
 		tea = int(input("\n" + "Vuoi fare un Tea:\n1-Nero\n2-Verde\n3-Custom\n\n"))
