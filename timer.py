@@ -25,8 +25,9 @@ def countdown():
 		time.sleep(1)
 		total_seconds -= 1
 	print(art, "\nÈ pronto")
+#remove this line if you don't want it to make any sound
 	print('\007')	
-tea = int(input("Vuoi fare un Tea:\n1-Nero\n2-Verde\n3-Custom\n\n"))
+tea = int(input("\nVuoi fare un Tea:\n1-Nero\n2-Verde\n3-Custom\n\n"))
 while tea != 1 or 2 or 3:
 	if tea == 1:
 		tea_time = 4 * 60
