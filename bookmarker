@@ -1,0 +1,12 @@
+#!/bin/sh
+
+
+bookmark="$(xclip -o)"
+file="$HOME/Documents/bookmarks"
+
+
+if grep -q "^$bookmark$" "$file"; then
+	zenity --info --text="Bookmark already present!" 2>/dev/null
+else
+	echo "$bookmark" >> "$file"
+fi
