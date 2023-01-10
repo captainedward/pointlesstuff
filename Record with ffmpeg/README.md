@@ -4,3 +4,6 @@
 records specific output
 * record_webcam
 records device /dev/video0
+* take_pictures
+
+Takes the first frame of a video as a .jpeg image.
