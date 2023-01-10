@@ -1,2 +1,2 @@
 #! /bin/bash
-ffmpeg -f v4l2 -video_size 640x480 -i /dev/video0 -c:v libx264 -preset ultrafast $1
+ffmpeg -f v4l2 -video_size 1280x720 -i /dev/video0 -c:v libx264 -preset ultrafast $1
