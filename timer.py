@@ -43,5 +43,5 @@ while tea != 1 or 2 or 3:
 		tea_time = m * 60 + s
 		countdown()
 		break
-	else:python3 make simple beep sound linux
+	else:
 		tea = int(input("\nYou want to drink a:\n1-Black Tea\n2-Green Tea\n3-Custom\n\n"))
