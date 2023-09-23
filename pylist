@@ -1,0 +1,34 @@
+#! /usr/bin/env python
+from datetime import date
+
+f = 1
+#Open file to write#
+file1 = open("file.txt", "a")
+while f == 1:
+#Asking user for inputs#
+	a = input("\nName:\n")
+	b = int(input("\nQuantity:\n"))
+	c = input("\nPrice:\n")
+	d = input("\nPrice to Weight:\n")
+	t = date.today()
+#Creating a List with user's inputs#	
+	list = [a, c, d, t]	
+#Converting the list to a string#
+	line = '\t'.join(map(str, list))
+#Appending the string to file#
+#Printing the string for the user#
+	print(line, "\n")
+#Duplicating if user purchased x>1 of items#
+	if b >	1:
+		for x in range(b-1):
+			file1.write(line + "\n")
+			print(line, "\n")
+#Breaking the loop#
+	r = input("\nMore? y/n\n")
+	if r == 'n':
+		break	
+	elif r == 'y':
+		f = 1
+	else:
+		print("Zio pera hai fatto un bel casino.")
+		break
