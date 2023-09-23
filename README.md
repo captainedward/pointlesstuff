@@ -13,9 +13,9 @@ This scripts alows you to print two different cats, Burro and Ciccio.
 ## christmas.py
 This simple scripts alows you to print different wishes, randomly.
 ## timer.py
-This is just a simple timer with three different options for your teas
+This is just a simple timer with three different options for your teas.
 ## pylist
-This is a simple list creator for groceries
+This is a simple list creator for groceries.
 ## Bookmarker
 bookmarker is a software that simpy alows you to add selected lines to a text file.
 ### Requirements:
