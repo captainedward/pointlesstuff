@@ -8,7 +8,14 @@ shop = input("\nGroceries store:\n")
 while f == 1:
 #Asking user for inputs#
         a = input("\nName:\n")
-        b = int(input("\nQuantity:\n"))
+#While loop until user inserts Integer#
+        while True:
+           try:
+               b = int(input("\nQuantity:\n"))
+               break
+           except ValueError:
+               print("Int, please.")
+
         c = input("\nPrice:\n")
         d = input("\nPrice to Weight:\n")
         t = date.today()
@@ -29,6 +36,12 @@ while f == 1:
         r = input("\nMore? y/n\n")
         if r == 'n':
                 break
+        elif r == 'y':
+                f = 1
+        else:
+                print("Zio pera hai fatto un bel casino.")
+                break
+
         elif r == 'y':
                 f = 1
         else:
