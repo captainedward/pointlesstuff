@@ -4,6 +4,8 @@ from datetime import date
 f = 1
 #Open file to write#
 file1 = open("file.txt", "a")
+file2 = open("file.txt", "w")
+
 shop = input("\nGroceries store:\n")
 while f == 1:
 #Asking user for inputs#
@@ -25,12 +27,14 @@ while f == 1:
         line = '\t'.join(map(str, list))
 #Appending the string to file#
         file1.write(line + "\n")
+        file2.write(line + "\n")
 #Printing the string for the user#
         print(line, "\n")
 #Duplicating if user purchased x>1 of items#
         if b >  1:
                 for x in range(b-1):
                         file1.write(line + "\n")
+                        file2.write(line + "\n")
                         print(line, "\n")
 #Breaking the loop#
         r = input("\nMore? y/n\n")
